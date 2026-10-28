@@ -1,0 +1,32 @@
+{
+  "name": "business-budget-optimizer",
+  "version": "1.0.0",
+  "description": "Production-grade MERN Stack Business Budget Optimization & Expense Intelligence Tool",
+  "main": "server/index.js",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test": "npm run test:server && npm run test:client",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "budget-optimization",
+    "expense-tracking",
+    "fintech",
+    "mongodb",
+    "express",
+    "react",
+    "tailwind"
+  ],
+  "author": "Nexora Fintech",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
